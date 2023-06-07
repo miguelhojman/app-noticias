@@ -1,0 +1,15 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  word-spacing: 0.7rem;
+}
+select {
+  height: 3rem;
+  font-size: 1.4rem;
+}
+button {
+  color: black;
+}

@@ -1,1 +1,39 @@
-<p>formulario works!</p>
+<div class="jumbotron mt-3">
+  <h2 class="heading">Filtrar Noticias por País y Categoría</h2>
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <form (ngSubmit)="buscarNoticia()">
+        <!--select-->
+        <div class="form-group d-flex justify-content-center my-5">
+          <select
+            name="categoria"
+            class="form-select w-75"
+            [(ngModel)]="categoriaSeleccionada"
+          >
+            <option [value]="item.value" *ngFor="let item of categorias">
+              {{ item.name }}
+            </option>
+          </select>
+        </div>
+        <!--select-->
+        <div class="form-group d-flex justify-content-center my-5">
+          <select
+            name="pais"
+            class="form-select w-75"
+            [(ngModel)]="paisSeleccionado"
+          >
+            <option [value]="item.value" *ngFor="let item of paises">
+              {{ item.name }}
+            </option>
+          </select>
+        </div>
+        <!--button-->
+        <div class="d-grid gap-2 d-flex justify-content-center my-5">
+          <button class="btn btn-lg btn-warning w-75" type="submit">
+            BUSCAR
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

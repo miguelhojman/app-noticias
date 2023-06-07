@@ -1,1 +1,11 @@
-<p>listado-noticias works!</p>
+<div class="card-container">
+  <div class="card" style="width: 24rem" *ngFor="let item of listNoticias2">
+    <button class="btn btn-warning">{{ item.author }}</button>
+    <img [src]="item.urlToImage" class="card-img-top" alt="{{ item.title }}" />
+    <div class="card-body">
+      <h4>{{ item.title }}</h4>
+      <h6>{{ item.publishedAt | date }}</h6>
+      <a [href]="item.url" target="_blank">IR A LA NOTICIA ORIGINAL</a>
+    </div>
+  </div>
+</div>

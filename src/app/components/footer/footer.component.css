@@ -1,0 +1,8 @@
+.footer {
+  display: flex;
+  justify-content: center;
+}
+span {
+  font-weight: 800;
+  font-style: italic;
+}
