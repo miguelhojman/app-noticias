@@ -18,17 +18,11 @@ export class AppComponent {
 
     //lo meto en un setTimeOut para que tarde un poco y siempre tarde lo mismo
     //si no es muy brusco
-
     setTimeout(() => {
-      this.servicio.getNoticias(param).subscribe(
-        (data) => {
-          this.listNoticias = data.articles;
-          this.loading = false;
-        },
-        (error) => {
-          console.log('Hubo un error de tipo : ' + error);
-        }
-      );
+      this.servicio.getNoticias(param).subscribe((data) => {
+        this.listNoticias = data.articles;
+        this.loading = false;
+      });
     }, 700);
   }
 }
