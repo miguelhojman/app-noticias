@@ -26,6 +26,9 @@ export class FormularioComponent {
     { value: 'hu', name: 'Hungría' },
     { value: 'mx', name: 'México' },
     { value: 'gb', name: 'Reino Unido' },
+    { value: 'es', name: 'España' },
+    { value: 'it', name: 'Italia' },
+    { value: 'us', name: 'Estados Unidos' },
   ];
 
   ngOnInit(): void {}
